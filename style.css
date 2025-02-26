@@ -21,7 +21,7 @@
   }
   
 
-h1 {
+h1, h2, h4, p{
   font-family: "Source Code Pro", serif;
   font-optical-sizing: auto;
   font-weight: 2px;
@@ -40,4 +40,10 @@ a:hover{
 .project-cards {
   background-color: rgb(25, 31, 37);
 }
-  
+
+.skills-img {
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+}
+

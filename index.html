@@ -16,7 +16,7 @@
   </head>
   <body class="p-3 mb-2 bg-dark text-white">
     <nav
-      class="navbar navbar-expand-lg bg-dark border-bottom border-body"
+      class="navbar navbar-expand-lg bg-dark border-bottom border-body sticky-top"
       data-bs-theme="dark"
     >
       <div class="container-fluid">
@@ -38,7 +38,7 @@
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto px-2 mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link me-4 active" aria-current="page" href="#">About</a>
+              <a class="nav-link me-4 active" aria-current="page" href="#about">About</a>
             </li>
             <li class="nav-item me-4">
               <a class="nav-link" href="#projects">Projects</a>
@@ -47,19 +47,19 @@
             <li class="nav-item me-4">
               <a
                 class="nav-link"
-                href="#"
+                href="#contact"
               
                 >Contact</a
               >
             </li>
-            <li class="nav-item me-4">
+            <!-- <li class="nav-item me-4">
               <a
                 class="nav-link"
                 href="#"
               
                 >Resume</a
               >
-            </li>
+            </li> -->
           </ul>
          
           </form>
@@ -68,40 +68,191 @@
     </nav>
 
     <div id="about">
+      <!-- Avatar -->
       <div class="d-flex justify-content-center align-items-center p-3">
-        <img src="images/avatar.png" class="img-icon rounded-circle" alt="" />
+        <img src="images/avatar.png" class="img-icon rounded-circle" alt="Avatar" />
       </div>
+    
+      <!-- Social Media Icons -->
       <div class="d-flex justify-content-center align-items-center p-3">
-       <a href="https://github.com/SumiDuck">
-        <i class="fa fa-github fa-3x ms-2 me-2"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/huiminlim17/">
-        <i class="fa fa-linkedin fa-3x ms-2 me-2"></i>
+        <a href="https://github.com/SumiDuck">
+          <i class="fa fa-github fa-3x mx-2"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/huiminlim17/">
+          <i class="fa fa-linkedin fa-3x mx-2"></i>
         </a>
       </div>
+    
+      <!-- About Me Text -->
+      <div class="d-flex flex-column justify-content-center align-items-center mx-auto mb-5 p-4 bg-light border rounded" style="max-width: 800px;">
+        <p class="text-center">
+          Hello! My name is Hui. I bring expertise in Node.js, Java, HTML, CSS, and React, with hands-on experience in building 
+          user-friendly and efficient web applications. My background in problem-solving, process 
+          improvement, and team collaboration enables me to organize information effectively and keep 
+          projects on track. Skilled in using tools like Spring Data JPA and MySQL for backend development, 
+          I’m adaptable, resilient, and eager to learn. I’m excited to contribute to impactful projects in the tech 
+          world while continuously growing my expertise.
+        </p>
+          
+          <div class =" d-flex">
+            <hr>
+            <h2> Tech Skillset:</h2>
+            <img class ="skills-img" src="images/html.png"/>
+            <img class ="skills-img" src="images/css.png"/>
+            <img class ="skills-img" src="images/javascript.png"/>
+            <img class ="skills-img" src="images/java.png"/>
+            <img class ="skills-img" src="images/mySQL.png"/>
+            <img class ="skills-img" src="images/springboot.png"/>
+            <img class ="skills-img" src="images/nodejs.png"/>
+            <img class ="skills-img" src="images/react.png"/>
+          </div>
+       
+      </div>
     </div>
-
-    <!-- Projects  -->
-    <div>
-      <div class="d-flex justify-content-center align-items-center p-3">
+    <div id ="projects">
         <h1>Projects</h1>
       </div>
 
-        <!-- Project card 1 -->
+          <!-- Project card 1 -->
+          <div class ="project-cards p-4 card rounded mt-4">
+            <h2> Granola Cafe Project (Group)</h2> <hr>
+            <div class="row">
+              <div class = "col-md-4">
+                <img class ="img-fluid" src="images/granola-cafe.gif" alt="">
+                <figcaption>Demo recording of application</figcaption>
+              </img>
+              </div>
+              <div class = "col-md-8">
+                <div class =" d-flex">
+                  <h2> Skills Utilized:</h2>
+                  <img class ="skills-img" src="images/html.png"/>
+                  <img class ="skills-img" src="images/css.png"/>
+                  <img class ="skills-img" src="images/javascript.png"/>
+                  <img class ="skills-img" src="images/java.png"/>
+                  <img class ="skills-img" src="images/mySQL.png"/>
+                  <img class ="skills-img" src="images/springboot.png"/>
+                </div>
+                <p> Created simple QR-Code Restraunt Ordering app. It updates the database in realtime when orders are made. Menus are also editable via the administrative site.</p>
+                <p>Group Project Contributors:
+                    <br> <a href="https://github.com/SumiDuck">Hui</a> 
+                    <br> <a href="https://github.com/yaiuser">Yaiuser</a> 
+                    <br> <a href="https://github.com/samiralatteef">Samirah</a> 
+                 
+                </p>
+                <div class="d-flex">
+                  <a href="https://github.com/yaiuser/fsd-team-3">
+                    <button class="btn btn-warning rounded ms-2 me-2">Front End Repository</button>
+                 </a>
+                  <a href="https://github.com/SumiDuck/GranolaCafeBackend">
+                    <button class="btn btn-warning rounded ms-2 me-2">Back End Repository</button>
+                 </a>
+                 </div>
+               
+              </div>
+              </div>
+          </div>
 
-        <div class ="project-cards p-4 card rounded">
-          <h2> Colmar Academy Project</h2>
-          <img>
+        <!-- Project card 2 -->
+        <div class ="project-cards p-4 card rounded mt-4">
+          <h2> Colmar Academy Project</h2>     <hr>
+          <div class="row">
+            <div class = "col-md-4">
+              <img class ="img-fluid" src="images/colmar-academy.png" alt="">
+              <figcaption>Page created as assignment requirements</figcaption>
+            </img>
+            </div>
+            <div class = "col-md-8">
+              <div class =" d-flex">
+                <h2> Skills Utilized:</h2>
+                <img class ="skills-img" src="images/html.png"/>
+                <img class ="skills-img" src="images/css.png"/>
+                <img class ="skills-img" src="images/javascript.png"/>
+              </div>
+              <p> Re-created the "Colmar Academy Website with an image reference for assignment.</p>
+              <div class="d-flex">
+                <a href="https://github.com/SumiDuck/fsd-colmar-academy">
+                  <button class="btn btn-warning rounded ms-2 me-2">Github Repository</button>
+               </a>
+                <a href="https://sumiduck.github.io/fsd-colmar-academy/">
+                  <button class="btn btn-warning rounded ms-2 me-2">Live Website Preview</button>
+               </a>
+               </div>
+            </div>
+            </div>
         </div>
 
-    </div>
 
-    <!-- Projects  -->
-    <div>
-      <div class="d-flex justify-content-center align-items-center p-3">
-        <h1>Certificates</h1>
-      </div>
+        <!-- Project card 3 -->
+        <div class ="project-cards p-4 card rounded mt-4">
+          <h2> Find Your Hat Game</h2>     <hr>
+          <div class="row">
+            <div class = "col-md-4">
+              <img class ="img-fluid" src="images/find-your-hat.png" alt="">
+              <figcaption>Find your hat game</figcaption>
+            </img>
+            </div>
+            <div class = "col-md-8">
+              <div class =" d-flex">
+                <h2> Skills Utilized:</h2>
+                <img class ="skills-img" src="images/javascript.png"/>
+                <img class ="skills-img" src="images/nodejs.png"/>
+              </div>
+              <p> Simple find your hat game, where you avoid obstacles and try to find your way to the hat by using W A S D.</p>
+              <div class="d-flex">
+                <a href="https://github.com/SumiDuck/fsd-colmar-academy">
+                  <button class="btn btn-warning rounded ms-2 me-2">Github Repository</button>
+               </a>
+              
+               </div>
+            </div>
+            </div>
+        </div>
     </div>
+  </div>
+
+    <!-- Certificates -->
+    <div id ="certificates" class="mt-5">
+      <h1>Certificates</h1>
+    </div>
+    <div class ="project-cards p-4 card rounded mt-4">
+      <h2> Certifications completed </h2>     <hr>
+      <div class="row">
+        <p>Codecademy - Java Course</p>
+        <!-- <img src="images/javaca.png" alt="" class="d-flex flex-column justify-content-center align-items-center mx-auto mb-5 p-4 " style="max-width: 500px;"> -->
+        </div>
+      </div>
+      
+    <!-- Contact Me -->
+    <div id ="contact" class="mt-5">
+      <h1>Contact</h1>
+    </div>
+    <div class ="project-cards p-4 card rounded mt-4">
+      <h2> Contact form</h2>     <hr>
+      <div class="row">
+        <div class="container">
+          <form action="https://formsubmit.co/413d86aa03fbfd2754a22d1986c93d84" method="POST">
+            <div class="form-group">
+              <div class="form-row row"> 
+                <div class="col-md-6 mb-2"> 
+                  <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                </div>
+                <div class="col-md-6 mb-2"> 
+                  <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+              <div class="d-flex justify-content-center mt-2">
+                <button type="submit" class="btn btn-lg btn-dark px-4 w-100">Submit Form</button>
+          </div>
+          </form>
+        </div>
+      </div>
+
+
+
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
